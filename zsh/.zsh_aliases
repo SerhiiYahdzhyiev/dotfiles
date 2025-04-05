@@ -1,0 +1,15 @@
+alias cls=clear
+alias lsa="ls -la"
+alias lg="lazygit"
+
+alias dps="docker ps -a"
+alias drm="docker rm"
+alias drmi"docker rmi"
+alias dv="docker volume ls"
+alias dvrm="docker volume rm"
+alias dprune="docker container prune"
+alias dils="docker image ls"
+alias dx="docker exec -it"
+alias dlogs="docker logs"
+
+alias makedev="make --file=Makefile.dev"
