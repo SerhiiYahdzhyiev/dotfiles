@@ -4,7 +4,7 @@ git submodule init
 git submodule update
 
 base=(
-    zsh i3 kitty
+    zsh i3 kitty dunst
 )
 
 useronly=(
