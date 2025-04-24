@@ -11,5 +11,6 @@ alias dprune="docker container prune"
 alias dils="docker image ls"
 alias dx="docker exec -it"
 alias dlogs="docker logs"
+alias dc="docker-compose"
 
 alias makedev="make --file=Makefile.dev"
