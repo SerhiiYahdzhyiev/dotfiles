@@ -14,3 +14,5 @@ alias dlogs="docker logs"
 alias dc="docker-compose"
 
 alias makedev="make --file=Makefile.dev"
+
+alias crenv="python -m venv"
