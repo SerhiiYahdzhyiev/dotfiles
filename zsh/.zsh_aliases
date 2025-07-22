@@ -4,17 +4,27 @@ alias lg="lazygit"
 alias lzd="lazydocker"
 
 alias dps="docker ps -a"
+
+alias dstart="docker start"
+alias dstop="docker stop"
 alias drm="docker rm"
 alias drmi"docker rmi"
-alias dv="docker volume ls"
-alias dvrm="docker volume rm"
 alias dprune="docker container prune"
-alias dils="docker image ls"
-alias dx="docker exec -it"
-alias dlogs="docker logs"
-alias dc="docker-compose"
 alias drun="docker run --rm -it"
+alias dexec="docker exec -it"
 
+alias dv="docker volume"
+alias dvl="docker volume ls"
+
+alias dimg="docker image"
+alias dil="docker image ls"
+
+alias dlog="docker logs -f"
+alias dlogs="docker logs"
+
+alias dc="docker-compose"
+
+# TODO: Does it even make sense...?
 alias makedev="make --file=Makefile.dev"
 
 alias crenv="python -m venv"
