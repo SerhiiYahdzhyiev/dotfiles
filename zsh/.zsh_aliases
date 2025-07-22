@@ -1,6 +1,7 @@
 alias cls=clear
 alias lsa="ls -la"
 alias lg="lazygit"
+alias lzd="lazydocker"
 
 alias dps="docker ps -a"
 alias drm="docker rm"
