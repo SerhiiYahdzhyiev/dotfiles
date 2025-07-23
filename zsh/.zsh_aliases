@@ -28,3 +28,4 @@ alias dc="docker-compose"
 alias makedev="make --file=Makefile.dev"
 
 alias crenv="python -m venv"
+alias vg="valgrind -s --track-origins=yes --leak-check=full --show-leak-kinds=all"
