@@ -1,39 +1,58 @@
 #!/usr/bin/env bash
 
+set -e
+
+# Initialize and update git submodules
 git submodule init
 git submodule update
 
+# Base apps for all users
 base=(
     zsh i3 kitty dunst vim
 )
 
+# Apps for user only (not root)
 useronly=(
 #     git
 )
 
-stowit() {
-    usr=$1
-    app=$2
-    # -v verbose
-    # -R recursive
-    # -t target
-    stow -v -R -t ${usr} ${app}
+link_app() {
+    local target_dir="$1"
+    local app_dir="$2"
+    local current_dir="$(pwd)"
+
+    echo "Linking $app_dir to $target_dir"
+
+    # Loop through each item in the app directory
+    for item in "$current_dir/$app_dir/"*; do
+        item_name=$(basename "$item")
+        target_path="$target_dir/.$item_name"
+
+        # Remove existing file/link/directory if it exists
+        if [ -e "$target_path" ] || [ -L "$target_path" ]; then
+            echo "Removing existing $target_path"
+            rm -rf "$target_path"
+        fi
+
+        # Create the symbolic link
+        ln -sv "$item" "$target_path"
+    done
 }
 
 echo ""
-echo "Stowing apps for user: ${whoami}"
+echo "Linking configs for user: $(whoami)"
 
-# install apps available to local users and root
-for app in ${base[@]}; do
-    stowit "${HOME}" $app 
+# Link base apps
+for app in "${base[@]}"; do
+    link_app "$HOME" "$app"
 done
 
-# install only user space folders
-for app in ${useronly[@]}; do
-    if [[ ! "$(whoami)" = *"root"* ]]; then
-        stowit "${HOME}" $app 
-    fi
-done
+# Link user-only apps if not root
+if [ "$(id -u)" -ne 0 ]; then
+    for app in "${useronly[@]}"; do
+        link_app "$HOME" "$app"
+    done
+fi
 
 echo ""
 echo "##### ALL DONE"
