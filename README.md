@@ -5,7 +5,6 @@ uses stow to setup the files.
 
 ## Dependencies
 
-1. [Stow](https://www.gnu.org/software/stow/)
 2. [Zsh](https://www.zsh.org)
 3. [Kitty](https://github.com/kovidgoyal/kitty)
 4. [i3](https://i3wm.org/)
