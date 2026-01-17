@@ -4,6 +4,8 @@ alias lg="lazygit"
 alias lzd="lazydocker"
 
 alias dps="docker ps -a"
+alias dpss="docker ps -a --format 'table {{.ID}} {{.Image}} {{.Status}}'"
+alias dpsp="docker ps -a --format 'table {{.ID}} {{.Image}} {{.Ports}}'"
 
 alias dstart="docker start"
 alias dstop="docker stop"
