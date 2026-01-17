@@ -3,7 +3,7 @@ set -euo pipefail
 
 DFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-apps=(git zsh)
+apps=(git vim zsh wezterm zellij)
 
 if [ "$#" -gt 0 ]; then
         apps=("$@")
