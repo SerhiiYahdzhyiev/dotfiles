@@ -2,6 +2,8 @@
 
 > Women always want just one thing... your dotfiles.
 
+[[_TOC_]]
+
 ## Dependencies/Prerequisites
 
 1. [Stow](https://www.gnu.org/software/stow/)
@@ -15,3 +17,61 @@
 > [!note]
 > Setup individual components by passing their stow package names
 > to the setup script, e.g. `./setup.sh git`
+
+## Node/NVM
+
+### Installation
+
+[NVM Repo](https://github.com/nvm-sh/nvm)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+```sh
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+
+## Python/UV
+
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```sh
+wget -qO- https://astral.sh/uv/install.sh | sh
+```
+
+## Rust/Cargo
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+## Zellij
+
+The most convenient way to install it is via `cargo`:
+
+```sh
+cargo install zellij
+```
+
+## RipGrep (For Nvim/Telescope)
+
+```sh
+cargo install ripgrep
+```
+
+## Nvim
+
+### Installation
+
+### Config
+
+The configuration is a separate [repository](https://github.com/Serhiiyahdzhyiev/sy-nvim).
+
+Quick setup:
+
+```bash
+cd # or cd $HOME, or whatever works for you
+git clone https://github.com/SerhiiYahdzhyiev/sy-nvim.git .config/nvim
+```
