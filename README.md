@@ -1,11 +1,13 @@
 # Dotfiles
 
-A repo with my dotfiles and a script that sets them up.
+> Women always want just one thing... your dotfiles.
 
-## Dependencies
+## Dependencies/Prerequisites
 
-1. [Zsh](https://www.zsh.org)
-2. [Kitty](https://github.com/kovidgoyal/kitty)
-3. [i3](https://i3wm.org/)
-4. [dunst](https://wiki.archlinux.org/title/Dunst)
-5. [git](https://git-scm.com/downloads)
+1. [Stow](https://www.gnu.org/software/stow/)
+2. [Git](https://git-scm.com/)
+
+## Quickstart
+
+1. Clone this repo and navigate to its root dir.
+2. Run: `./setup.sh`.
