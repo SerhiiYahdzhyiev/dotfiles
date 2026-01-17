@@ -52,7 +52,7 @@ zstyle ':completion:*' list-colors '${{(s.:.)LS_COLORS}}'
 zstyle ':completion:*' menu no
 
 alias ls="ls --color"
-source ~/aliases.sh
+source ~/aliases
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ ! -f ~/.local_aliases ]] || source ~/.local_aliases
