@@ -57,3 +57,4 @@ source ~/aliases
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ ! -f ~/.local_aliases ]] || source ~/.local_aliases
 [[ ! -f ~/.local_path ]] || source ~/.local_path
+[[ ! -f ~/.nvm/nvm.sh ]] || source ~/.nvm/nvm.sh
