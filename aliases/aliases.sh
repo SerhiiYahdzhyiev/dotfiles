@@ -19,15 +19,17 @@ alias dv="docker volume"
 alias dvl="docker volume ls"
 
 alias dimg="docker image"
-alias dil="docker image ls"
+alias dils="docker image ls"
 
 alias dlog="docker logs -f"
 alias dlogs="docker logs"
 
 alias dc="docker-compose"
 
-# TODO: Does it even make sense...?
-alias makedev="make --file=Makefile.dev"
-
-alias crenv="python -m venv"
 alias vg="valgrind -s --track-origins=yes --leak-check=full --show-leak-kinds=all"
+
+alias zls="zellij ls"
+alias zk="zellij kill-session"
+alias zd="zellij delete-session"
+alias zka="zellij ka"
+alias zda="zellij da"
