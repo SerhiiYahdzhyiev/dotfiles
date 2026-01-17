@@ -29,6 +29,8 @@ alias dc="docker-compose"
 alias vg="valgrind -s --track-origins=yes --leak-check=full --show-leak-kinds=all"
 
 alias zls="zellij ls"
+alias zs="zellij -s"
+alias za="zellij a"
 alias zk="zellij kill-session"
 alias zd="zellij delete-session"
 alias zka="zellij ka"
