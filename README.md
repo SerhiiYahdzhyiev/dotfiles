@@ -2,8 +2,6 @@
 
 > Women always want just one thing... your dotfiles.
 
-[[_TOC_]]
-
 ## Dependencies/Prerequisites
 
 1. [Stow](https://www.gnu.org/software/stow/)
@@ -12,15 +10,22 @@
 ## Quickstart
 
 1. Clone this repo and navigate to its root dir.
-2. Run: `./setup.sh`.
+2. (Optional) Run `install.sh` to install software an tools.
+3. Run: `./setup.sh`.
 
 > [!note]
 > Setup individual components by passing their stow package names
 > to the setup script, e.g. `./setup.sh git`
 
-## Node/NVM
+## Docker (Rootless)
 
-### Installation
+Make sure you have the `uidmap` setup and working.
+
+```sh
+curl -fsSL https://get.docker.com/rootless | sh
+```
+
+## Node/NVM
 
 [NVM Repo](https://github.com/nvm-sh/nvm)
 
@@ -62,10 +67,6 @@ cargo install ripgrep
 ```
 
 ## Nvim
-
-### Installation
-
-### Config
 
 The configuration is a separate [repository](https://github.com/Serhiiyahdzhyiev/sy-nvim).
 
