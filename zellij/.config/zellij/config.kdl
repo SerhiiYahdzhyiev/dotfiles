@@ -268,7 +268,7 @@ web_client {
 }
  
 simplified_ui false
-theme "dracula"
+theme "gruvbox-dark"
 default_mode "normal"
 default_shell "zsh"
 default_layout "default"
