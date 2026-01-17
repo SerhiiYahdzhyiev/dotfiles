@@ -54,5 +54,6 @@ zstyle ':completion:*' menu no
 alias ls="ls --color"
 source ~/aliases.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.local_aliases ]] || source ~/.local_aliases
+[[ ! -f ~/.local_path ]] || source ~/.local_path
