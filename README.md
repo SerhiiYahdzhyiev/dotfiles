@@ -11,3 +11,7 @@
 
 1. Clone this repo and navigate to its root dir.
 2. Run: `./setup.sh`.
+
+> [!note]
+> Setup individual components by passing their stow package names
+> to the setup script, e.g. `./setup.sh git`
