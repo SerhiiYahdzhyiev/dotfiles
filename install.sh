@@ -13,6 +13,7 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 # -- Lazygit (Release binary) --
 wget https://github.com/jesseduffield/lazygit/releases/download/v0.58.1/lazygit_0.58.1_linux_x86_64.tar.gz
+mkdir ./lazygit
 tar -xzf ./lazygit_0.58.1_linux_x86_64.tar.gz -C ./lazygit
 mv ./lazygit/lazygit $HOME/.local/bin/lazygit
 rm -rf ./lazygit*
