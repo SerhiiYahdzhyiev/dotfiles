@@ -268,7 +268,7 @@ web_client {
 }
  
 simplified_ui false
-theme "gruvbox-dark"
+theme "tokyo-night"
 default_mode "normal"
 default_shell "zsh"
 default_layout "default"
@@ -289,7 +289,7 @@ support_kitty_keyboard_protocol false
 web_server false
 web_sharing "off"
 enforce_https_for_localhost false
-sshow_startup_tips false
+show_startup_tips false
 show_release_notes false
 advanced_mouse_actions false
 web_server_ip "127.0.0.1"
