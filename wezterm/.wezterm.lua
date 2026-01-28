@@ -16,7 +16,7 @@ local shell_path = get_shell("zsh") or os.getenv("SHELL") or "/bin/sh"
 local shell = { shell_path, "-l" }
 
 config.font_size = 16
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.6
 config.enable_wayland = false
 config.default_prog = shell
 
