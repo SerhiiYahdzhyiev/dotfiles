@@ -35,3 +35,6 @@ alias zk="zellij kill-session"
 alias zd="zellij delete-session"
 alias zka="zellij ka"
 alias zda="zellij da"
+
+alias npm="npm --ignore-scripts"
+alias npx="npx --no-install"

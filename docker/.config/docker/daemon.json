@@ -1,0 +1,23 @@
+{
+  "icc": false,
+  "no-new-privileges": true,
+  "live-restore": true,
+  "userland-proxy": false,
+  "usens-remap": "default",
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  },
+  "default-ulimits": {
+    "nofile": {
+      "Name": "nofile",
+      "Hard": 64000,
+      "Soft": 64000
+    }
+  },
+  "seccomp-profile": "/etc/docker/seccomp/default.json",
+  "content-trust": {
+      "mode": "enforced"
+  }
+}
