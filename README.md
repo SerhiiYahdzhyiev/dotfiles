@@ -17,14 +17,6 @@
 > Setup individual components by passing their stow package names
 > to the setup script, e.g. `./setup.sh git`
 
-## Docker (Rootless)
-
-Make sure you have the `uidmap` setup and working.
-
-```sh
-curl -fsSL https://get.docker.com/rootless | sh
-```
-
 ## Node/NVM
 
 [NVM Repo](https://github.com/nvm-sh/nvm)
