@@ -60,3 +60,12 @@ source ~/aliases
 [[ ! -f ~/.nvm/nvm.sh ]] || source ~/.nvm/nvm.sh
 
 export PATH=${HOME}/.local/bin:${PATH}
+
+export PIP_REQUIRE_HASHES=1
+export PIP_ONLY_BINARY=:all:
+export PIP_NO_INPUT=1
+export PIP_DISABLE_PIP_VERSION_CHECK=1
+
+export UV_REQUIRE_HASHES=1
+export UV_PRERELEASE=disallow
+export UV_INDEX_STRATEGY=first-index
