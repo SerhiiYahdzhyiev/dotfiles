@@ -1,4 +1,3 @@
-# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 source aliases
@@ -8,5 +7,6 @@ source aliases
 
 PS1='[\u@\h \W]\$ '
 
-. "$HOME/.local/bin/env"
+export PATH=${HOME}/.local/bin:${PATH}
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
