@@ -38,3 +38,5 @@ alias zda="zellij da"
 
 alias npm="npm --ignore-scripts"
 alias npx="npx --no-install"
+
+alias pip="uv pip"
