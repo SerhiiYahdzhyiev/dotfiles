@@ -45,10 +45,10 @@ bindkey "^f" autosuggest-accept
 bindkey "^p" history-search-backward
 bindkey "^n" history-search-forward
 
-zstyle :compinstall filename '/home/sy/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors '${{(s.:.)LS_COLORS}}'
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 zstyle ':completion:*' menu no
 
 alias ls="ls --color"
