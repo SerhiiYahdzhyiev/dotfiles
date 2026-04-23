@@ -3,6 +3,10 @@ alias lsa="ls -la"
 alias lg="lazygit"
 alias lzd="lazydocker"
 
+alias lamp="lavat -G -c blue -k cyan"
+
+alias tf=terraform
+
 alias dps="docker ps -a"
 alias dpss="docker ps -a --format 'table {{.ID}} {{.Image}} {{.Status}}'"
 alias dpsp="docker ps -a --format 'table {{.ID}} {{.Image}} {{.Ports}}'"
