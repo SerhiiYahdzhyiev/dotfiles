@@ -90,7 +90,6 @@ vnoremap gc :<C-u>call ToggleComment()<CR>
 
 " Autocommands
 autocmd FileType vim setlocal commentstring=\"%s
-autocmd FileType vim setlocal commentstring=\"%s
 autocmd FileType sh setlocal commentstring=#\ %s
 autocmd FileType html setlocal commentstring=<!--\ %s\ -->
 autocmd FileType css setlocal commentstring=/*\ %s\ */

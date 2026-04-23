@@ -10,20 +10,11 @@
 ## Quickstart
 
 1. Clone this repo and navigate to its root dir.
-2. (Optional) Run `install.sh` to install software an tools.
-3. Run: `./setup.sh`.
+2. Run: `./setup.sh`.
 
 > [!note]
 > Setup individual components by passing their stow package names
 > to the setup script, e.g. `./setup.sh git`
-
-## Docker (Rootless)
-
-Make sure you have the `uidmap` setup and working.
-
-```sh
-curl -fsSL https://get.docker.com/rootless | sh
-```
 
 ## Node/NVM
 

@@ -1,0 +1,9 @@
+no-build = true
+no-build-isolation = false
+index-strategy = "first-index"
+
+[[index]]
+url = "https://pypi.org/simple"
+default = true
+require-hashes = true
+prerelease = "disallow"

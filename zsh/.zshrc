@@ -45,10 +45,10 @@ bindkey "^f" autosuggest-accept
 bindkey "^p" history-search-backward
 bindkey "^n" history-search-forward
 
-zstyle :compinstall filename '/home/sy/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors '${{(s.:.)LS_COLORS}}'
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 zstyle ':completion:*' menu no
 
 alias ls="ls --color"
@@ -58,3 +58,14 @@ source ~/aliases
 [[ ! -f ~/.local_aliases ]] || source ~/.local_aliases
 [[ ! -f ~/.local_path ]] || source ~/.local_path
 [[ ! -f ~/.nvm/nvm.sh ]] || source ~/.nvm/nvm.sh
+
+export PATH=${HOME}/.local/bin:${PATH}
+
+export PIP_REQUIRE_HASHES=1
+export PIP_ONLY_BINARY=:all:
+export PIP_NO_INPUT=1
+export PIP_DISABLE_PIP_VERSION_CHECK=1
+
+export UV_REQUIRE_HASHES=1
+export UV_PRERELEASE=disallow
+export UV_INDEX_STRATEGY=first-index
