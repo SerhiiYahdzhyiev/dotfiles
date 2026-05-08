@@ -4,6 +4,7 @@ alias lg="lazygit"
 alias lzd="lazydocker"
 
 alias lamp="lavat -G -c blue -k cyan"
+alias matrix="cmatrix -C magenta"
 
 alias tf=terraform
 
