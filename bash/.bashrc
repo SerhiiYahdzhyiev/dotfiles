@@ -19,3 +19,5 @@ export PIP_DISABLE_PIP_VERSION_CHECK=1
 export UV_REQUIRE_HASHES=1
 export UV_PRERELEASE=disallow
 export UV_INDEX_STRATEGY=first-index
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
